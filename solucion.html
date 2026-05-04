@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución - Clasificación Automatizada</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Reciclaje Inteligente</div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="problema.html">Problema</a>
+                <a href="solucion.html" class="active">Solución</a>
+                <a href="vision-artificial.html">VA</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="galeria.html">Galería</a>
+                <a href="resultados.html">Resultados</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>Nuestra Solución Técnica</h1>
+                
+                <div class="highlight">
+                    <p>Prototipo automatizado compuesto por cinta transportadora y sistema de visión artificial basado en redes neuronales convolucionales para clasificar botellas de vidrio, plástico y lata.</p>
+                </div>
+
+                <h2>Componentes del Sistema</h2>
+                <p>Subsistema de visión artificial basado en redes neuronales convolucionales (CNN) para identificar el material en tiempo real. Subsistema mecánico con cinta transportadora y servomotores para redirigir las botellas.</p>
+
+                <h2>Metodología de Desarrollo</h2>
+                <p>Cuatro fases secuenciales: diseño del sistema, construcción del prototipo, pruebas y ajustes, e implementación. Metodología iterativa con verificación en cada etapa.</p>
+
+                <h2>Ciclo de Operación</h2>
+                <p>Sensor IR detecta botella → detiene cinta 200ms → captura imagen → preprocesa → modelo TFLite predice material → activa servomotor correspondiente → reanuda cinta.</p>
+
+                <div class="highlight">
+                    <p>Sistema completamente autónomo sin intervención humana durante operación normal.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Clasificación Automatizada de Botellas - Unidad Educativa Técnico Salesiano</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.scroll-top').style.display = window.pageYOffset > 300 ? 'block' : 'none';
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

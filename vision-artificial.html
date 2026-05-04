@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión Artificial - Clasificación Automatizada</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Reciclaje Inteligente</div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="problema.html">Problema</a>
+                <a href="solucion.html">Solución</a>
+                <a href="vision-artificial.html" class="active">VA</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="galeria.html">Galería</a>
+                <a href="resultados.html">Resultados</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>Visión Artificial y Componentes</h1>
+                
+                <div class="highlight">
+                    <p>Sistema de visión artificial basado en redes neuronales convolucionales (CNN) integrado con componentes mecánicos y electrónicos para clasificación automática de materiales.</p>
+                </div>
+
+                <h2>Visión Artificial</h2>
+                <p>La visión artificial permite a los sistemas computacionales interpretar información visual de imágenes o video. Comprende cuatro etapas principales:</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem auto; max-width: 900px;">
+                    <div class="highlight" style="padding: 2rem;">
+                        <h3>Adquisición de imagen</h3>
+                        <p>Cámaras y sensores infrarrojos capturan imágenes de las botellas en movimiento.</p>
+                    </div>
+                    <div class="highlight" style="padding: 2rem;">
+                        <h3>Preprocesamiento</h3>
+                        <p>Normalización, reducción de ruido y redimensionado a 640×640 px.</p>
+                    </div>
+                    <div class="highlight" style="padding: 2rem;">
+                        <h3>Extracción de características</h3>
+                        <p>Redes CNN detectan texturas, colores y brillos característicos de cada material.</p>
+                    </div>
+                    <div class="highlight" style="padding: 2rem;">
+                        <h3>Clasificación</h3>
+                        <p>Identificación del material: vidrio, plástico o lata.</p>
+                    </div>
+                </div>
+
+                <h2>Redes Neuronales Convolucionales (CNN)</h2>
+                <p>Arquitectura MobileNetV2 con transfer learning. Capas convolucionales detectan patrones jerárquicos desde bordes hasta formas complejas. Modelo optimizado con TensorFlow Lite para ejecución en dispositivos embebidos.</p>
+
+                <h2>Componentes Mecánicos</h2>
+                <table style="margin: 3rem auto;">
+                    <thead>
+                        <tr>
+                            <th>Componente</th>
+                            <th>Especificaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cinta transportadora</td>
+                            <td>Chasis PLA impreso, motor DC 6V, banda tensada sobre rodillos</td>
+                        </tr>
+                        <tr>
+                            <td>Servomotores</td>
+                            <td>TD-8120MG, 26.3 kg/cm torque, control PWM</td>
+                        </tr>
+                        <tr>
+                            <td>Contenedores</td>
+                            <td>3 contenedores laterales bajo compuertas deflectoras</td>
+                        </tr>
+                        <tr>
+                            <td>Iluminación</td>
+                            <td>Aro de luz LED cenital para iluminación constante</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Componentes Electrónicos</h2>
+                <table style="margin: 3rem auto;">
+                    <thead>
+                        <tr>
+                            <th>Componente</th>
+                            <th>Función</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cámara</td>
+                            <td>Captura de imágenes sincronizada</td>
+                        </tr>
+                        <tr>
+                            <td>Sensor IR</td>
+                            <td>Detección de presencia de botellas</td>
+                        </tr>
+                        <tr>
+                            <td>SBC (Single Board Computer)</td>
+                            <td>Procesamiento CNN y control de servomotores</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight">
+                    <p>Integración completa mediante script Python que coordina captura, clasificación e actuación mecánica en tiempo real.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Clasificación Automatizada de Botellas - Unidad Educativa Técnico Salesiano</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.scroll-top').style.display = window.pageYOffset > 300 ? 'block' : 'none';
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

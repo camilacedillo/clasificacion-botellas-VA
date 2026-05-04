@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo - Clasificación Automatizada</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Reciclaje Inteligente</div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="problema.html">Problema</a>
+                <a href="solucion.html">Solución</a>
+                <a href="vision-artificial.html">VA</a>
+                <a href="equipo.html" class="active">Equipo</a>
+                <a href="galeria.html">Galería</a>
+                <a href="resultados.html">Resultados</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>Equipo de Desarrollo</h1>
+                
+                <p>Unidad Educativa Técnico Salesiano</p>
+
+                <div class="team-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="team-member">
+                        <div class="member-avatar">JR</div>
+                        <h3>Juan Riquetti</h3>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">CC</div>
+                        <h3>Camila Cedillo</h3>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">MS</div>
+                        <h3>Mateo Sánchez</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Clasificación Automatizada de Botellas - Unidad Educativa Técnico Salesiano</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.scroll-top').style.display = window.pageYOffset > 300 ? 'block' : 'none';
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

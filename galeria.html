@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Clasificación Automatizada</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Reciclaje Inteligente</div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="problema.html">Problema</a>
+                <a href="solucion.html">Solución</a>
+                <a href="vision-artificial.html">VA</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="galeria.html" class="active">Galería</a>
+                <a href="resultados.html">Resultados</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>Galería del Proyecto</h1>
+                
+                <p>Documentación visual del prototipo y sistema desarrollado</p>
+
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="video-prototipo.mp4" type="video/mp4">
+                            Tu navegador no soporta video.
+                        </video>
+                        <div class="gallery-label">
+                            <strong>Cinta transportadora en funcionamiento</strong>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="prototipo-completo.jpg" alt="Prototipo completo">
+                        <div class="gallery-label">
+                            <strong>Prototipo físico completo</strong>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="servomotores.jpg" alt="Sistema servomotores">
+                        <div class="gallery-label">
+                            <strong>Sistema de servomotores</strong>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="video-clasificacion.mp4" type="video/mp4">
+                            Tu navegador no soporta video.
+                        </video>
+                        <div class="gallery-label">
+                            <strong>Proceso de clasificación automática</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Clasificación Automatizada de Botellas - Unidad Educativa Técnico Salesiano</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.scroll-top').style.display = window.pageYOffset > 300 ? 'block' : 'none';
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

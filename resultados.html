@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Clasificación Automatizada</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Reciclaje Inteligente</div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="problema.html">Problema</a>
+                <a href="solucion.html">Solución</a>
+                <a href="vision-artificial.html">VA</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="galeria.html">Galería</a>
+                <a href="resultados.html" class="active">Resultados</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>Resultados del Proyecto</h1>
+                
+                <div class="highlight">
+                    <p>Pruebas finales realizadas con 90 botellas (30 de cada material) bajo condiciones normales de operación. Precisión global del 79%.</p>
+                </div>
+
+                <h2>Precisión por Material</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Muestras Probadas</th>
+                            <th>Clasificaciones Correctas</th>
+                            <th>Precisión</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vidrio</td>
+                            <td>30</td>
+                            <td>21</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td>Plástico</td>
+                            <td>30</td>
+                            <td>28</td>
+                            <td>93%</td>
+                        </tr>
+                        <tr>
+                            <td>Lata</td>
+                            <td>30</td>
+                            <td>23</td>
+                            <td>75%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>90</strong></td>
+                            <td><strong>72</strong></td>
+                            <td><strong>79%</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Tiempos de Procesamiento</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Etapa del Proceso</th>
+                            <th>Tiempo Promedio</th>
+                            <th>Tiempo Máximo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Captura de imagen</td>
+                            <td>~700 ms</td>
+                            <td>~880 ms</td>
+                        </tr>
+                        <tr>
+                            <td>Preprocesamiento</td>
+                            <td>~5000 ms</td>
+                            <td>~6000 ms</td>
+                        </tr>
+                        <tr>
+                            <td>Inferencia del modelo</td>
+                            <td>~11000 ms</td>
+                            <td>~15000 ms</td>
+                        </tr>
+                        <tr>
+                            <td>Activación del servomotor</td>
+                            <td>~80 ms</td>
+                            <td>~120 ms</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total por botella</strong></td>
+                            <td><strong>~16700 ms</strong></td>
+                            <td><strong>~5500 ms</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight">
+                    <p>El prototipo demostró ser técnicamente viable para clasificación automática, cumpliendo los tres objetivos específicos planteados.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Clasificación Automatizada de Botellas - Unidad Educativa Técnico Salesiano</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.scroll-top').style.display = window.pageYOffset > 300 ? 'block' : 'none';
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

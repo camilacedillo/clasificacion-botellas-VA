@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema - Clasificación Automatizada</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Reciclaje Inteligente</div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="problema.html" class="active">Problema</a>
+                <a href="solucion.html">Solución</a>
+                <a href="vision-artificial.html">VA</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="galeria.html">Galería</a>
+                <a href="resultados.html">Resultados</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>El Problema del Reciclaje</h1>
+                
+                <div class="highlight">
+                    <p>En 2020 se generaron 2.24 mil millones de toneladas de residuos globales, de los cuales menos del 20% fue procesado formalmente. El problema central es la mezcla de materiales reciclables como vidrio, plástico y aluminio.</p>
+                </div>
+
+                <h2>Consecuencias de la Mezcla</h2>
+                <p>La mezcla de materiales reciclables degrada su calidad y eleva los costos operativos de recuperación. La clasificación manual predomina en países en desarrollo, pero es lenta, costosa e ineficiente.</p>
+
+                <h2>Realidad en Ecuador</h2>
+                <p>Los sistemas municipales de recolección de basura mezclan en gran medida los desechos reciclables con los no reciclables, contaminando los materiales desde su origen.</p>
+
+                <div class="highlight">
+                    <p>La automatización mediante visión artificial surge como solución eficiente para la clasificación de materiales en tiempo real.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Clasificación Automatizada de Botellas - Unidad Educativa Técnico Salesiano</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.scroll-top').style.display = window.pageYOffset > 300 ? 'block' : 'none';
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
